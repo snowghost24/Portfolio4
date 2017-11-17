@@ -5,45 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+    crossorigin="anonymous"> -->
   <link rel="stylesheet" href="navshrink/css/style.css">
-<!-- This is used to animite elemets  -->
-<!-- <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
-<!-- This is enables the use of font font-awesome icons -->
+  <!-- This is used to animite elemets  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- This here allows me to scroll to a specic part of a page on click -->
+  <!-- This is enables the use of font font-awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- This font is for the main page title -->
   <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <!-- These are devi icons link -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-
-
-
+  <!-- insets lato google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
   <link rel="stylesheet" type="text/css" href="css/style2.css" />
-  <!-- This script allows you to have have a shading effect on top of a parallax div. -->
-  <script>
-    var bg = $('#bg');
-    $(window).scroll(function () {
-      var x = $(this).scrollTop();
-      bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-    });
-// might use this later
-    // var bg = $('#bg');
-    // $(window).scroll(function () {
-    //   var x = $(this).scrollTop();
-    //   bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-    // });
-  </script>
+  <title>My Portfolio</title>
   <style>
     /* page layout css */
 
@@ -72,7 +64,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       height: 80px;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 99;
-
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     }
 
     .sect {
@@ -85,13 +77,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     .subsect {
       height: 50%;
       background-color: #E0FFFF;
-
     }
 
     .subsectAbout {
       height: 780px;
-      /* background-color: #E0FFFF; */
-      background:url("./images/bg.jpg") repeat top left;
+      background: url("./images/bg.jpg") repeat top left;
 
     }
 
@@ -103,33 +93,99 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       background-image: linear-gradient(rgba(0, 0, 0, .9), #1a1a1a),
       url("https://media.giphy.com/media/aOV2DtkhQtoc0/giphy.gif");
       background-repeat: no-repeat;
-      /* background-image: url("reactlow.gif"); */
-      /* rgb(39, 39, 38) */
     }
 
+    /* This holds the computer image */
     .sectTwo {
-      background-image: url("images/screw.jpg");
+      background-image: url("./images/computer.jpeg");  
     }
+
 
     .sectThree {
-      background-image: url("images/forrest.jpg");
+      background-image: url("./images/");  
+        }
+
+
+    
+    /* first paralix title  */
+    #header {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #D3D3D3;
+      font-style: normal;
+      font-variant-ligatures: normal;
+      font-variant-caps: normal;
+      font-variant-numeric: normal;
+      font-weight: 400;
+      font-stretch: normal;
+      font-size: 90px;
+      line-height: 1.3;
+      font-family: 'Fugaz One', cursive;
+      text-align: center;
     }
 
-
-
-
-    /* Targets footer and bottom container */
-
-    #b-container {
-      /* background: #252525;
-	
-	padding: 36px 0 42px; */
-      /* background-color: #666666;
-         display: flex;
-         height: 90px;
-         justify-content: center; */
+    .text-box {
+      height: 600px;
+      padding: 20px;
     }
 
+    @media only screen and (max-device-width: 1024px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+
+    .navbar {
+      margin-bottom: 0 !important;
+    }
+
+    /* This creates space between top of div and h1 item */
+
+    #aboutMeH1 {
+      margin-top: 90px;
+    }
+
+    /* This reduces the size of the down icon button in the carousel models*/
+
+    #arrowIcon {
+      font-size: 40px;
+    }
+
+    .projectIconSize {
+      font-size: 80px;
+      padding: 0 15px;
+      margin-top: 6px;
+    }
+
+    #socketImg {
+      height: 100px;
+      width: auto;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #watsonLogoImg {
+      height: 100px;
+      width: auto;
+    }
+
+    #mongoLogoImg {
+      height: 100px;
+      width: auto;
+    }
+
+    .descriptionP {
+      color: black;
+      width: auto;
+    }
+    .latestWorkDiv{
+   display: flex;
+    }
+
+    /*============================ This area targes the footers =============================*/
     footer {
       margin: 0;
       background: #252525;
@@ -148,40 +204,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     #copyright {
       color: white;
-
     }
 
-    /* Targets connect box */
-
-    /* .connect-item {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-      } */
-
-    .connect-item2 {
-      /* display: flex;
-         flex: 3; */
-      /* justify-content: space-around; */
-      /* flex-direction: row; */
-    }
-
-    .connect-icon {
-      /* display: flex;
-         justify-content: flex-start;
-         padding:  */
-    }
-
-    #icon1 {
-      /* margin-left: 60%; */
-    }
-
-    #icon3 {
-      /* margin-right: 60%; */
-    }
-
-    /* icons transitions */
 
     .iconic1 {
       color: rgba(0, 0, 0, 0.5);
@@ -238,49 +262,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       transform: translateY(+30px);
       color: #009df6;
     }
-
-    /* first paralix title  */
-
-    #header {
-      position: absolute;
-      z-index: 1;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      color: #D3D3D3;
-      font-style: normal;
-      font-variant-ligatures: normal;
-      font-variant-caps: normal;
-      font-variant-numeric: normal;
-      font-weight: 400;
-      font-stretch: normal;
-      font-size: 90px;
-      line-height: 1.8;
-      font-family: 'Fugaz One', cursive;
-      text-align: center;
-    }
-
-    .text-box {
-      height: 600px;
-      padding: 20px;
-    }
-
-    @media only screen and (max-device-width: 1024px) {
-      .parallax {
-        background-attachment: scroll;
-      }
-    }
-
-    .navbar {
-      margin-bottom: 0 !important;
-    }
-
-    #aboutMeH1{
-      margin-top: 40px;
-    }
-
   </style>
-  <title>Portfolio</title>
+ 
 
 
 </head>
@@ -290,17 +273,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <nav id="topNav">
     <ul>
       <li>
-        <a href="https://www.callofduty.com/">Angel</a>
+        <a href="https://www.callofduty.com/">Jose Guzman</a>
       </li>
-      <li>
-        <a>Gabby</a>
-      </li>
-      <li>
-        <a>Golda</a>
-      </li>
-      <li>
-        <a>Angelee</a>
-      </li>
+   
     </ul>
   </nav>
 
@@ -308,142 +283,165 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- FIRST div in parallax -->
   <div class="sect sectOne ">
     <div class="firstdiv">
-      <h1 id="header">Coding <br>for a better future</h1>
+      <h1 id="header">Coding
+        <br>for a better future
+        <br>
+        <i id="arrowIcon" class="fa fa-arrow-circle-down fa-small" aria-hidden="true"></i>
+      </h1>
     </div>
   </div>
 
   <!-- This is the ABOUT ME DIV -->
   <div class="subsectAbout">
-    <div class="container">
+    <div class="container1">
       <header>
-          <h1 id="aboutMeH1">ABOUT <span>ME</span></h1>
-          <h2>My Desires and Life Experiences</h2>
-        </header>
-        <section>
-          <ul class="lb-album">
-          
-            <li>
-              <a href="#image-2">
-                <img src="images/thumbs/ucf.png" alt="image02">
-                <span>UCF Coding Bootcamp</span>
-              </a>
-              <div class="lb-overlay" id="image-2">
-                <img src="images/full/ucfbootcamp.JPG" alt="image02" />
-                <div>							
-                  <h3>UCF Coding Bootcamp <span>/ˌpôr də ˈbrä/</h3>
-                  <p>An exercise designed to develop graceful movement and disposition of the arms</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+        <h1 id="aboutMeH1">ABOUT
+          <span>ME</span>
+        </h1>
+        <h2>My Desires and Life Experiences</h2>
+      </header>
+      <section>
+        <ul class="lb-album">
+
+          <li>
+            <a href="#image-2">
+              <img src="images/thumbs/ucf.png" alt="image02">
+              <span>UCF Coding Bootcamp</span>
+            </a>
+            <div class="lb-overlay" id="image-2">
+              <img src="images/full/ucfbootcamp.JPG" alt="image02" />
+              <div>
+                <h3>UCF Coding Bootcamp
+                  <span>/ˌpôr də ˈbrä/</h3>
+                <p>An exercise designed to develop graceful movement and disposition of the arms</p>
               </div>
-            </li>
-            <li>
-              <a href="#image-3">
-                <img src="images/thumbs/teachingcover.jpg" alt="image03">
-                <span>Teaching</span>
-              </a>
-              <div class="lb-overlay" id="image-3">
-                <img src="images/full/math.jpg" alt="image03" />
-                <div>							
-                  <h3>Teaching<span>/plēˈā/</h3>
-                  <p>A movement in which a dancer bends the knees and straightens them again</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-3">
+              <img src="images/thumbs/teachingcover.jpg" alt="image03">
+              <span>Teaching</span>
+            </a>
+            <div class="lb-overlay" id="image-3">
+              <img src="images/full/math.jpg" alt="image03" />
+              <div>
+                <h3>Teaching
+                  <span>/plēˈā/</h3>
+                <p>A movement in which a dancer bends the knees and straightens them again</p>
               </div>
-            </li>
-            <li>
-              <a href="#image-4">
-                <img src="images/thumbs/trinitycover.jpg" alt="image04">
-                <span>Trinity College</span>
-              </a>
-              <div class="lb-overlay" id="image-4">
-                <img src="images/full/Trinity.jpg" alt="image04" />
-                <div>							
-                  <h3>Trinity College <span>/əˈdäjō/</h3>
-                  <p>A movement or composition marked to be played adagio</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-4">
+              <img src="images/thumbs/trinitycover.jpg" alt="image04">
+              <span>Trinity College</span>
+            </a>
+            <div class="lb-overlay" id="image-4">
+              <img src="images/full/Trinity.jpg" alt="image04" />
+              <div>
+                <h3>Trinity College
+                  <span>/əˈdäjō/</h3>
+                <p>A movement or composition marked to be played adagio</p>
               </div>
-            </li>
-            <li>
-                <a href="#image-1">
-                  <img src="https://placehold.it/200x200"alt="image01">
-                  <span>Liri</span>
-                </a>
-                <div class="lb-overlay" id="image-1">
-                  <img src="images/full/lirigif.gif" alt="image01" />
-                  <div>
-                    <h3>Liri Bot<span>/point/</h3>
-                    <p>Dance performed on the tips of the toes</p>
-                  </div>
-                  <a href="#page" class="lb-close">x Close</a>
-                </div>
-              </li>
-            <li>
-              <a href="#image-5">
-                <img src="images/thumbs/westworldcover.png" alt="image05">
-                <span>westworld</span>
-              </a>
-              <div class="lb-overlay" id="image-5">
-                <img src="images/full/westworld.png" alt="image05" />
-                <div>							
-                  <h3>frap·pé<span>/fraˈpā/</h3>
-                  <p>Involving a beating action of the toe of one foot against the ankle of the supporting leg</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-1">
+              <img src="https://placehold.it/200x200" alt="image01">
+              <span>Liri</span>
+            </a>
+            <div class="lb-overlay" id="image-1">
+              <img src="images/full/lirigif.gif" alt="image01" />
+              <div>
+                <h3>Liri Bot
+                  <span>/point/</h3>
+                <p>Dance performed on the tips of the toes</p>
               </div>
-            </li>
-            <li>
-              <a href="#image-6">
-                <img src="images/thumbs/travelcover.jpg" alt="image06">
-                <span>Travel</span>
-              </a>
-              <div class="lb-overlay" id="image-6">
-                <img src="images/full/travel.jpg"  alt="image06" />
-                <div>							
-                  <h3>Travel <span>/gliˈsäd/</h3>
-                  <p>One leg is brushed outward from the body, which then takes the weight while the second leg is brushed in to meet it</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-5">
+              <img src="images/thumbs/westworldcover.png" alt="image05">
+              <span>westworld</span>
+            </a>
+            <div class="lb-overlay" id="image-5">
+              <img src="images/full/westworld.png" alt="image05" />
+              <div>
+                <h3>frap·pé
+                  <span>/fraˈpā/</h3>
+                <p>Involving a beating action of the toe of one foot against the ankle of the supporting leg</p>
               </div>
-            </li>
-            <li>
-              <a href="#image-7">
-                <img src="images/thumbs/currycover.png" alt="image07">
-                <span>Basketball</span>
-              </a>
-              <div class="lb-overlay" id="image-7">
-                <img src="images/full/curryfull.png" alt="image07" />
-                <div>							
-                  <h3>Golden State Warriors <span>/zhə-ˈtā/</h3>
-                  <p>A springing jump made from one foot to the other in any direction</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-6">
+              <img src="images/thumbs/travelcover.jpg" alt="image06">
+              <span>Travel</span>
+            </a>
+            <div class="lb-overlay" id="image-6">
+              <img src="images/full/travel.jpg" alt="image06" />
+              <div>
+                <h3>Travel
+                  <span>/gliˈsäd/</h3>
+                <p>One leg is brushed outward from the body, which then takes the weight while the second leg is brushed in
+                  to meet it</p>
               </div>
-            </li>
-            <li>
-              <a href="#image-8">
-                <img src="images/thumbs/snow.jpg" alt="image08">
-                <span>snowboarding</span>
-              </a>
-              <div class="lb-overlay" id="image-8">
-                <img src="images/full/snowboarding.jpg" alt="image08" />
-                <div>							
-                  <h3>snowboarding <span>/pēˈkā/</h3>
-                  <p>Strongly pointed toe of the lifted and extended leg sharply lowers to hit the floor then immediately rebounds upward</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-7">
+              <img src="images/thumbs/currycover.png" alt="image07">
+              <span>Basketball</span>
+            </a>
+            <div class="lb-overlay" id="image-7">
+              <img src="images/full/curryfull.png" alt="image07" />
+              <div>
+                <h3>Golden State Warriors
+                  <span>/zhə-ˈtā/</h3>
+                <p>A springing jump made from one foot to the other in any direction</p>
               </div>
-            </li>
-          </ul>
-        </section>
-      </div>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+          <li>
+            <a href="#image-8">
+              <img src="images/thumbs/snow.jpg" alt="image08">
+              <span>snowboarding</span>
+            </a>
+            <div class="lb-overlay" id="image-8">
+              <img src="images/full/snowboarding.jpg" alt="image08" />
+              <div>
+                <h3>snowboarding
+                  <span>/pēˈkā/</h3>
+                <p>Strongly pointed toe of the lifted and extended leg sharply lowers to hit the floor then immediately rebounds
+                  upward
+                </p>
+              </div>
+              <a href="#page" class="lb-close">x Close</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
   <!-- This is the end of the ABOUT ME DIV -->
-  <div class="sect sectTwo"></div>
-  <div class="subsect">
+  <div class="sect sectTwo">
+    <div class="latestWorkDiv">
+        <h1>See My Latest Work</h1>
+    </div>
+
+
+  </div>
+  <div id="carouselDiv">
 
     <!-- start of carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" data-interval=false class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -452,15 +450,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img class="d-block img-fluid" src="https://placehold.it/1600x600" alt="First slide">
+          <img class="d-block img-fluid" src="./images/voiceassistanceFull.jpg" alt="First slide">
+
           <div class="carousel-caption d-none d-md-block">
-            <h3>Item 1</h3>
-            <p>describes item 1</p>
+            <!-- Button trigger modal -->
+
+
+            <h1 style="font-family: 'Lato', sans-serif; font-size:90px; color:black;">Voice Assitance</h1>
+            <div>
+              <p class="descriptionP">
+                A business applicable voice command application tailored to retrieve information from databases or API's
+              </p>
+            </div>
+            <button type="button" style="background-color:black; color:white;" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block img-fluid" src="https://placehold.it/1600x600" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
+
             <h3>Item 2</h3>
             <p>describes item 2</p>
           </div>
@@ -468,6 +477,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <div class="carousel-item">
           <img class="d-block img-fluid" src="https://placehold.it/1600x600" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
+
             <h3>Item 3</h3>
             <p>describes item 3</p>
 
@@ -478,7 +488,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
           <div class="carousel-caption d-none d-md-block">
             <h3>Item 4</h3>
             <p>describes item 4</p>
-
           </div>
         </div>
       </div>
@@ -493,13 +502,96 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </div>
     <!-- end of carousel -->
   </div>
+
   <div class="sect sectThree">
-    
+    <div
+    class="container">
+      <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
   </div>
-  <!-- Here is the divider -->
-
-
-
+  
+ 
+  <!-- Modal 1-->
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" style="color:#e05800; font-size:40px; align-content:center;" f>Applied Technologies</h2>
+          </div>
+          <div id="myModalBody1" class="modal-body">
+            <div id="tryMove" class="animated bounceInUp">
+              <i class="devicon-html5-plain-wordmark colored projectIconSize"></i>
+              <i class="devicon-css3-plain-wordmark colored projectIconSize"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored projectIconSize"></i>
+              <i class="devicon-javascript-plain colored projectIconSize"></i>
+              <i class="devicon-babel-plain colored projectIconSize"></i>
+              <i class="devicon-github-plain-wordmark colored projectIconSize"></i>
+              <i class="devicon-heroku-plain-wordmark colored projectIconSize"></i>
+              <i class="devicon-nodejs-plain colored projectIconSize"></i>
+              <!-- <i class="devicon-nodejs-plain-wordmark colored "></i> -->
+              <i class="devicon-react-original-wordmark colored projectIconSize"></i>
+              <i class="devicon-twitter-plain colored projectIconSize"></i>
+              <img id="watsonLogoImg" src="./images/thumbs/ibmwatson.jpeg" alt="">
+              <img id="mongoLogoImg" src="./images/thumbs/mongodb2.png" alt="">
+              <img id="mongoLogoImg" src="./images/thumbs/translate1.png" alt="">
+              <img id="socketImg" src="./images/thumbs/socketimg.png" alt="">
+            </div>
+          </div>
+          <p>Some text in the modal.</p>
+          <div class="modal-footer">
+            <button id="theButton">the button</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -528,7 +620,44 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </div>
   <script src="navshrink/js/index.js"></script>
   <script>
-  // $('.firstdiv').load().animateCss('bounce');</script>
+    //This tries to set the Modal heigh
+    $('#myModal').on('show.bs.modal', function () {
+      $('.modal .modal-body').css('overflow-y', 'auto');
+      $('.modal .modal-body').css('min-height', $(window).height() * 0.7);
+    });
+
+    // this Animates things in carauser
+    // $("#theButton").click(function(){
+    //         $("#tryMove").animate({
+    //             height: 'toggle'
+    //         });
+    //     });
+    // $("#theButton").click(function(){
+    //   $("#tryMove").fadeIn(3000);
+    //               $("#tryMove").animate({
+    //                   left: '250px',
+    //                   height: '150px',
+    //                   width: '150px'
+    //               },3000);
+
+    //           });
+    //This code is helper for the 
+
+    //  This script allows you to have have a shading effect on top of a parallax div.
+    var bg = $('#bg');
+    $(window).scroll(function () {
+      var x = $(this).scrollTop();
+      bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+    });
+
+
+    //this script allows you to scroll down when you click a button
+    $("#arrowIcon").click(function () {
+      $('html,body').animate({
+        scrollTop: $(".subsectAbout").offset().top
+      },
+        'slow');
+    });</script>
 </body>
 
 </html>
