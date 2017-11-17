@@ -66,10 +66,10 @@ a{
 	color: #333;
 	text-decoration: none;
 }
- .container11{
+ .container1{
 	position: relative;
 	text-align: center;
-	max-width: 1200px;
+	/* max-width: 1200px; */
 
  } 
 .clr{
@@ -200,4 +200,4 @@ p.codrops-demos a.current-demo:hover{
 		top: auto;
 		left: auto;
 	}
-}
+} 

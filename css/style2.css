@@ -2,7 +2,8 @@
 /* rgba(27,54,81,0.8) */
 
 .lb-album{
-	width: auto;
+	width: 1140px;
+	
 	margin: 0 auto;
 	font-family: 'brandon-grotesque', 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 }
