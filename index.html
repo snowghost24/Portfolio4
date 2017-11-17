@@ -37,6 +37,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       var x = $(this).scrollTop();
       bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
     });
+// might use this later
+    // var bg = $('#bg');
+    // $(window).scroll(function () {
+    //   var x = $(this).scrollTop();
+    //   bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+    // });
   </script>
   <style>
     /* page layout css */
@@ -60,7 +66,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       margin-bottom: 20px;
     }
 
-    nav {
+    #topNav {
       position: fixed;
       width: 100%;
       height: 80px;
@@ -78,8 +84,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     .subsect {
       height: 50%;
-      background-color: #E0FFFF
-;
+      background-color: #E0FFFF;
+
+    }
+
+    .subsectAbout {
+      height: 780px;
+      /* background-color: #E0FFFF; */
+      background:url("./images/bg.jpg") repeat top left;
+
     }
 
     .sectOne {
@@ -262,7 +275,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       margin-bottom: 0 !important;
     }
 
-
+    #aboutMeH1{
+      margin-top: 40px;
+    }
 
   </style>
   <title>Portfolio</title>
@@ -272,7 +287,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <body>
   <!-- Navigation section -->
-  <nav>
+  <nav id="topNav">
     <ul>
       <li>
         <a href="https://www.callofduty.com/">Angel</a>
@@ -290,37 +305,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </nav>
 
 
-
-
-  <!-- first div in parallax -->
+  <!-- FIRST div in parallax -->
   <div class="sect sectOne ">
     <div class="firstdiv">
       <h1 id="header">Coding <br>for a better future</h1>
     </div>
   </div>
 
-  <!-- this is the ABOUT ME DIV -->
-  <div class="subsect">
+  <!-- This is the ABOUT ME DIV -->
+  <div class="subsectAbout">
+    <div class="container">
       <header>
-          <h1>ABOUT <span>ME</span></h1>
+          <h1 id="aboutMeH1">ABOUT <span>ME</span></h1>
           <h2>My Desires and Life Experiences</h2>
         </header>
         <section>
           <ul class="lb-album">
-            <li>
-              <a href="#image-1">
-                <img src="https://placehold.it/200x200"alt="image01">
-                <span>Liri</span>
-              </a>
-              <div class="lb-overlay" id="image-1">
-                <img src="images/full/lirigif.gif" alt="image01" />
-                <div>
-                  <h3>Liri Bot<span>/point/</h3>
-                  <p>Dance performed on the tips of the toes</p>
-                </div>
-                <a href="#page" class="lb-close">x Close</a>
-              </div>
-            </li>
+          
             <li>
               <a href="#image-2">
                 <img src="images/thumbs/ucf.png" alt="image02">
@@ -363,6 +364,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
                 <a href="#page" class="lb-close">x Close</a>
               </div>
             </li>
+            <li>
+                <a href="#image-1">
+                  <img src="https://placehold.it/200x200"alt="image01">
+                  <span>Liri</span>
+                </a>
+                <div class="lb-overlay" id="image-1">
+                  <img src="images/full/lirigif.gif" alt="image01" />
+                  <div>
+                    <h3>Liri Bot<span>/point/</h3>
+                    <p>Dance performed on the tips of the toes</p>
+                  </div>
+                  <a href="#page" class="lb-close">x Close</a>
+                </div>
+              </li>
             <li>
               <a href="#image-5">
                 <img src="images/thumbs/westworldcover.png" alt="image05">
@@ -421,6 +436,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
             </li>
           </ul>
         </section>
+      </div>
   </div>
   <!-- This is the end of the ABOUT ME DIV -->
   <div class="sect sectTwo"></div>

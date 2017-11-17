@@ -2,7 +2,7 @@
 /* rgba(27,54,81,0.8) */
 
 .lb-album{
-	width: 1200px;
+	width: auto;
 	margin: 0 auto;
 	font-family: 'brandon-grotesque', 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 }
@@ -18,8 +18,8 @@
 
 
 .lb-album li > a{
-	width: 255px;
-	height: 200px;
+	width: 275px;
+	height: 220px;
 	position: relative;
 	padding: 10px;
 	background: #A9A9A9;
