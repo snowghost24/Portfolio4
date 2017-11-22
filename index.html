@@ -12,368 +12,40 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="navshrink/css/style.css">
   <!-- This is used to animite elemets  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <!-- This here allows me to scroll to a specic part of a page on click -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
   <!-- This is enables the use of font font-awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- This font is for the main page title -->
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
   <!-- These are devi icons link -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- insets lato google font -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Anton|Lato:400,700|Fugaz+One" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animate.css">  
+  <link rel="stylesheet" href="assets/css/style_nav.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style2.css"/>
 
   <title>My Portfolio</title>
-  <style>
-    /* page layout css */
-
-    * {
-      margin: 0;
-    }
-
-    html,
-    body {
-      height: 100%;
-    }
-
-    /* #topNav {
-      position: fixed;
-      width: 100%;
-      height: 80px;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 99;
-      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-    } */
-    
-/* This creates Paralax effect */
-    .sect {
-      height: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-
-    #meImage {
-      height: 300px;
-      width: auto;
-      border-radius: 50%;
-    }
-
-    .subsectAbout {
-      height: 780px;
-      background: url("./images/bg.jpg") repeat top left;
-    }
-
-    .sectOne {
-      height: 1000px;
-      width: 100%;
-      background-size: cover;
-      background-attachment: fixed;
-      background-image: linear-gradient(rgba(0, 0, 0, .8), #1a1a1a),
-      url("https://media.giphy.com/media/aOV2DtkhQtoc0/giphy.gif");
-      background-repeat: no-repeat;
-    }
-
-    /* This holds the computer image */
-
-    .sectTwo {
-      background-image: url("./images/computer.jpeg");
-    }
-
-    .sectThree {
-      background-image: linear-gradient(to right,
-      rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 14.2857143%,
-      rgba(0, 0, 0, .4) 14.2857143%, rgba(0, 0, 0, .4) 28.5714286%,
-      rgba(0, 0, 0, .6)28.5714286%, rgba(0, 0, 0, .6) 42.8571429%,
-      rgba(0, 0, 0, .66) 42.8571429%, rgba(0, 0, 0, .66) 57.1428572%,
-      rgba(0, 0, 0, .6) 57.1428572%, rgba(0, 0, 0, .6) 71.4285715%,
-      rgba(0, 0, 0, .4) 71.4285715%, rgba(0, 0, 0, .4) 85.7142858%,
-      rgba(0, 0, 0, .2) 85.7142858%, rgba(0, 0, 0, .2) 100%),
-      url("./images/full/computerdesk7.jpg");
-    }
-
-/* edits the emal me button */
-    .theCursive {
-      font-size: 16px;
-      font-family: brandon-grotesque, Constantia, Palatino, "Palatino Linotype";
-      font-style: italic;
-      color: white;
-    }
-
-    /* first paralix title  */
-    #header {
-      position: absolute;
-      z-index: 1;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      color: #D3D3D3;
-      font-style: normal;
-      font-variant-ligatures: normal;
-      font-variant-caps: normal;
-      font-variant-numeric: normal;
-      font-weight: 400;
-      font-stretch: normal;
-      font-size: 90px;
-      line-height: 1.3;
-      font-family: 'Fugaz One', cursive;
-      text-align: center;
-    }
-
-    /* This reduces the size of the down icon button in the carousel models*/
-
-    #arrowIcon {
-      font-size: 40px;
-    }
-
-    .projectIconSize {
-      font-size: 80px;
-      padding: 0 15px;
-      margin-top: 6px;
-    }
-
-    #socketImg {
-      height: 100px;
-      width: auto;
-      margin: 0px;
-      padding: 0px;
-    }
-
-    #watsonLogoImg {
-      height: 100px;
-      width: auto;
-    }
-
-    #mongoLogoImg {
-      height: 100px;
-      width: auto;
-    }
-
-    .descriptionP {
-      color: black;
-      width: auto;
-    }
-
-    .latestWorkDiv {
-      overflow: auto;
-      width: 900px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #secondArrow {
-      margin-top: 90px
-    }
-
-    #portfolioDiv {
-      color: white;
-      margin-top: 220px;
-      font-family: 'Lato', sans-serif;
-      font-size: 100px;
-    }
-
-    #contactMeDiv {
-      color: white;
-      font-family: 'Fugaz One', cursive;
-      font-size: 100px;
-      margin-top: 190px;
-    }
-
-    /*============================ This area targes the footers =============================*/
-
-    footer {
-      margin: 0;
-      background: #252525;
-      justify-content: flex-end;
-      display: flex;
-      flex-direction: row;
-      align-items: right;
-      padding: 30px;
-      flex: 1;
-      justify-content: center;
-    }
-
-    .connect-icon {
-      padding: 0 20px;
-    }
-
-
-    .iconic1 {
-      color: rgba(0, 0, 0, 0.5);
-      -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-      /* Safari */
-      transition: color 2s ease, width 2s, height 2s, transform 2s;
-    }
-
-    .iconic1:hover {
-      -webkit-transform: rotate(360deg);
-      /* Safari */
-      transform: translateY(+30px);
-      color: black;
-    }
-
-    .iconic2 {
-      color: rgba(0, 0, 0, 0.5);
-      -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-      /* Safari */
-      transition: color 2s ease, width 2s, height 2s, transform 2s;
-    }
-
-    .iconic2:hover {
-      -webkit-transform: rotate(360deg);
-      /* Safari */
-      transform: translateY(+30px);
-      color: #0084bf;
-    }
-
-    .iconic3 {
-      color: rgba(0, 0, 0, 0.5);
-      -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-      /* Safari */
-      transition: color 2s ease, width 2s, height 2s, transform 2s;
-    }
-
-    .iconic3:hover {
-      -webkit-transform: rotate(360deg);
-      /* Safari */
-      transform: translateY(+30px);
-      color: #e05800;
-    }
-
-    .iconic4 {
-      color: rgba(0, 0, 0, 0.5);
-      -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-      /* Safari */
-      transition: color 2s ease, width 2s, height 2s, transform 2s;
-    }
-
-    .iconic4:hover {
-      -webkit-transform: rotate(360deg);
-      /* Safari */
-      transform: translateY(+30px);
-      color: #009df6;
-    }
-
-    /* this first div in the carousel */
-
-    .cItem1Div {
-      /* height: 100%; */
-      /* background-color: #1a1a1a; */
-      background: url("./images/bg.jpg") repeat top left;
-      position: relative;
-    }
-
-    /* This is so that the white background doesnt show when switching images */
-    #carouselDiv {
-      /* background-color: #1a1a1a; */
-      background: url("./images/bg.jpg") repeat top left;
-    }
-
-    /* this image in the first carousel */
-    .citem1image1 {
-      /* overflow: auto; */
-      position: absolute;
-       z-index: -1; 
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 290px;
-      padding: 10px;
-	background: #A9A9A9;
-	-webkit-box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	-moz-box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px 4px 4px 4px;
-    }
-
-    .citem1image1:hover {
-      cursor: url(images/next3.png), auto;
-    }
-
-
-    .hiddeOverflow {
-      overflow: auto;
-    }
-
-    .centerImageContent {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 100px;
-      color: white;
-      margin-top: 25%;
-      z-index: -1;  
-    }
-
-  
-    .cursorControlsC {
-      /* color: rgb(40, 40, 40);
-      font-size: 60px; */
-    font-size: 16px;
-    font-style: italic;
-    color: #4a3124;
-    text-shadow: 0px 1px 1px rgba(255,255,255,1);
-    }
-
-
-    .h3Title{
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
-    line-height: 35px;
-    font-weight: 400;
-    color: rgba(27,54,81,0.8);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 0px 5px 0px;
-  }
-
-  .hoverEffect img:hover{
-	opacity: 1;
-	filter: alpha(opacity=99); /* internet explorer */
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
-}
-.scrollImg{
-  padding: 10px;
-	background: #A9A9A9;
-	-webkit-box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	-moz-box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px 4px 4px 4px;
-}
-
-.sideAdjustmentsLeft{
-flex-direction: column;
-margin-left: 15px;
-}
-
-.sideAdjustmentsRight{
-flex-direction: column;
-margin-left: 15px;
-}
-
-  </style>
 </head>
 
 <body>
   <!-- Navigation section -->
   <nav id="topNav">
     <ul>
-      <li>
+      <li id="name-li" class="guzman">
         <a href="https://www.callofduty.com/">Jose Guzman</a>
       </li>
+      <li class="middleNavItems">
+          <a href="https://www.callofduty.com/">TOP</a>
+        </li>
+        <li class="middleNavItems">
+            <a href="https://www.callofduty.com/">ABOUT ME</a>
+          </li>
+          <li class="middleNavItems">
+              <a href="https://www.callofduty.com/">CONTACT ME</a>
+            </li>
     </ul>
   </nav>
-
 
   <!-- FIRST div in parallax -->
   <div class="sect sectOne ">
@@ -381,7 +53,9 @@ margin-left: 15px;
       <h1 id="header">Coding
         <br>for a better future
         <br>
+        <a>
         <i id="arrowIcon" class="fa fa-arrow-circle-down fa-small" aria-hidden="true"></i>
+      </a>
       </h1>
     </div>
   </div>
@@ -399,11 +73,11 @@ margin-left: 15px;
         <ul class="lb-album">
           <li>
             <a href="#image-2">
-              <img src="images/thumbs/ucf.png" alt="image02">
+              <img src="./assets/images/thumbs/ucf.png" alt="image02">
               <span>UCF Coding Bootcamp</span>
             </a>
             <div class="lb-overlay" id="image-2">
-              <img src="images/full/ucfbootcamp.JPG" alt="image02" />
+              <img src="./assets/images/full/ucfbootcamp.JPG" alt="image02" />
               <div>
                 <h3>UCF Coding Bootcamp
                   <span>/ˌpôr də ˈbrä/</h3>
@@ -414,11 +88,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-3">
-              <img src="images/thumbs/teachingcover.jpg" alt="image03">
+              <img src="./assets/images/thumbs/teachingcover.jpg" alt="image03">
               <span>Teaching</span>
             </a>
             <div class="lb-overlay" id="image-3">
-              <img src="images/full/math.jpg" alt="image03" />
+              <img src="./assets/images/full/math.jpg" alt="image03" />
               <div>
                 <h3>Teaching
                   <span>/plēˈā/</h3>
@@ -429,11 +103,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-4">
-              <img src="images/thumbs/trinitycover.jpg" alt="image04">
+              <img src="./assets/images/thumbs/trinitycover.jpg" alt="image04">
               <span>Trinity College</span>
             </a>
             <div class="lb-overlay" id="image-4">
-              <img src="images/full/Trinity.jpg" alt="image04" />
+              <img src="./assets/images/full/Trinity.jpg" alt="image04" />
               <div>
                 <h3>Trinity College
                   <span>/əˈdäjō/</h3>
@@ -444,11 +118,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-1">
-              <img src="images/thumbs/codingcover.jpg" alt="image01">
+              <img src="./assets/images/thumbs/codingcover.jpg" alt="image01">
               <span>Coding</span>
             </a>
             <div class="lb-overlay" id="image-1">
-              <img src="images/full/lirigif.gif" alt="image01" />
+              <img src="./assets/images/full/lirigif.gif" alt="image01" />
               <div>
                 <h3>Liri Bot
                   <span>/point/</h3>
@@ -459,11 +133,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-5">
-              <img src="images/thumbs/westworldcover.png" alt="image05">
+              <img src="./assets/images/thumbs/westworldcover.png" alt="image05">
               <span>westworld</span>
             </a>
             <div class="lb-overlay" id="image-5">
-              <img src="images/full/westworld.png" alt="image05" />
+              <img src="./assets/images/full/westworld.png" alt="image05" />
               <div>
                 <h3>frap·pé
                   <span>/fraˈpā/</h3>
@@ -474,11 +148,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-6">
-              <img src="images/thumbs/travelcover.jpg" alt="image06">
+              <img src="./assets/images/thumbs/travelcover.jpg" alt="image06">
               <span>Travel</span>
             </a>
             <div class="lb-overlay" id="image-6">
-              <img src="images/full/travel.jpg" alt="image06" />
+              <img src="./assets/images/full/travel.jpg" alt="image06" />
               <div>
                 <h3>Travel
                   <span>/gliˈsäd/</h3>
@@ -490,11 +164,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-7">
-              <img src="images/thumbs/currycover.png" alt="image07">
+              <img src="./assets/images/thumbs/currycover.png" alt="image07">
               <span>Basketball</span>
             </a>
             <div class="lb-overlay" id="image-7">
-              <img src="images/full/curryfull.png" alt="image07" />
+              <img src="./assets/images/full/curryfull.png" alt="image07" />
               <div>
                 <h3>Golden State Warriors
                   <span>/zhə-ˈtā/</h3>
@@ -505,11 +179,11 @@ margin-left: 15px;
           </li>
           <li>
             <a href="#image-8">
-              <img src="images/thumbs/snow.jpg" alt="image08">
+              <img src="./assets/images/thumbs/snow.jpg" alt="image08">
               <span>snowboarding</span>
             </a>
             <div class="lb-overlay" id="image-8">
-              <img src="images/full/snowboarding.jpg" alt="image08" />
+              <img src="./assets/images/full/snowboarding.jpg" alt="image08" />
               <div>
                 <h3>snowboarding
                   <span>/pēˈkā/</h3>
@@ -528,13 +202,16 @@ margin-left: 15px;
   <div class="sect sectTwo">
     <div class="latestWorkDiv">
       <h1 id="portfolioDiv">LATEST PROJECTS</h1>
-      <img id="secondArrow" src="./images/down_arrow2.png" alt="">
+      <a>
+      <img id="secondArrow" src="./assets/images/down_arrow2.png" alt="">
+    </a>
     </div>
   </div>
 
   <!-- start of carousel -->
   <div id="carouselDiv">
     <div id="carouselExampleIndicators" data-interval=false class="carousel slide" data-ride="carousel">
+      
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -545,9 +222,11 @@ margin-left: 15px;
 
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active cItem1Div">
-          <div class="hiddeOverflow hoverEffect" data-toggle="modal" data-target="#myModal">
-            <img class="citem1image1" src="./images/voiceassistanceFull.jpg"> 
-            <h3 id="oneImgH3" class="centerImageContent h3Title">Voice Command</h3>
+          <div class="hiddeOverflow" data-toggle="modal" data-target="#myModal">
+            <img class="citem1image1" src="./assets/images/full/voiceassistanceFull.jpg">
+            <div class="hiddeOverflow">
+                <h3 id="oneImgH3" class="centerImageContent h3Title">Voice Command</h3>
+            </div> 
           </div>
           <div class="carousel-caption d-none d-md-block">
               <!-- <button type="button" style="background-color:black; color:white;" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button> -->
@@ -556,12 +235,12 @@ margin-left: 15px;
           </div>
           <a id="oneSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span   class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
-            <img class="scrollImg" src="images/thumbs/tone_analyzerthumb.jpg" alt="image03">
+            <img class="scrollImg" src="./assets/images/thumbs/tone_analyzerthumb.jpg" alt="image03">
             <span class="sr-only">Previous</span>
           </a>
           <a id="oneSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span  class="cursorControlsC" aria-hidden="true">Southern Leather</span>
-            <img class="scrollImg" src="images/thumbs/carinteriorthumb.jpg" alt="image03">
+            <img class="scrollImg" src="./assets/images/thumbs/carinteriorthumb.jpg" alt="image03">
             <span class="sr-only">Next</span>
           </a>
 
@@ -569,17 +248,19 @@ margin-left: 15px;
 
 
         <div class="carousel-item cItem1Div">
-          <div class=hiddeOverflow>
-            <img class="citem1image1" src="./images/full/carinterirorfull.jpg">
-            <h3 id="twoImgH3" class="centerImageContent h3Title">Southern Leather</h3>
-          </div>
+            <div class="hiddeOverflow">
+                <img class="citem1image1" src="./assets/images/full/carinterirorfull.jpg">
+                <div class="hiddeOverflow">
+                    <h3 id="twoImgH3" class="centerImageContent h3Title">Southern Leather</h3>
+                  </div> 
+              </div>
           <a id="twoSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span   class="cursorControlsC" aria-hidden="true">Voice Command</span>
-              <img class="scrollImg" src="images/thumbs/voiceActivationSmall.jpg" alt="image03">            <span class="sr-only">Previous</span>
+              <img class="scrollImg" src="./assets/images/thumbs/voiceActivationSmall.jpg" alt="image03">            <span class="sr-only">Previous</span>
           </a>
           <a  id="twoSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span  class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
-              <img class="scrollImg" src="images/thumbs/transwrorldthumb.jpg" alt="image03">            <span class="sr-only">Next</span>
+              <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">            <span class="sr-only">Next</span>
           </a>
           <div class="carousel-caption d-none d-md-block">
             <h3>Item 2</h3>
@@ -591,17 +272,19 @@ margin-left: 15px;
 
 
         <div class="carousel-item cItem1Div">
-          <img class="citem1image1" src="./images/full/transworldfull.jpg">
-          <div class=hiddeOverflow>
-            <h3 id="threeImgH3" class="centerImageContent h3Title">Transworld Scraper</h3>
-          </div>
+            <div class="hiddeOverflow">
+                <img class="citem1image1" src="./assets/images/full/transworldfull.jpg">
+                <div class="hiddeOverflow">
+                    <h3 id="threeImgH3" class="centerImageContent h3Title">Transworld Scraper</h3>
+                  </div> 
+              </div>
           <a id="threeSpanPrev"  class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span  class="cursorControlsC" aria-hidden="true">Southern Leather</span>
-              <img class="scrollImg" src="images/thumbs/carinteriorthumb.jpg" alt="image03">            <span class="sr-only">Previous</span>
+              <img class="scrollImg" src="./assets/images/thumbs/carinteriorthumb.jpg" alt="image03">            <span class="sr-only">Previous</span>
           </a>
           <a  id="threeSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span  class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
-            <img class="scrollImg" src="images/thumbs/tone_analyzerthumb.jpg" alt="image03">
+            <img class="scrollImg" src="./assets/images/thumbs/tone_analyzerthumb.jpg" alt="image03">
             <span class="sr-only">Next</span>
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -614,18 +297,20 @@ margin-left: 15px;
 
 
         <div class="carousel-item cItem1Div">
-          <img class="citem1image1" src="./images/full/tone_analyzerfull.jpg">
-          <div class=hiddeOverflow>
-            <h3 id="fourImgH3" class="centerImageContent h3Title">Tone Analyzer</h3>
-          </div>
+            <div class="hiddeOverflow">
+                <img class="citem1image1" src="./assets/images/full/tone_analyzerfull.jpg">
+                <div class="hiddeOverflow">
+                    <h3 id="fourImgH3" class="centerImageContent h3Title">Tone Analyzer</h3>
+                  </div> 
+              </div>
           <a id="fourSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span  class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
-            <img class="scrollImg" src="images/thumbs/transwrorldthumb.jpg" alt="image03">   
+            <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">   
             <span class="sr-only">Previous</span>
           </a>
-          <a id="fourSpanNext" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a id="fourSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span  class="cursorControlsC" aria-hidden="true">Voice Command</span>
-            <img class="scrollImg" src="images/thumbs/voiceActivationSmall.jpg" alt="image03">
+            <img class="scrollImg" src="./assets/images/thumbs/voiceActivationSmall.jpg" alt="image03">
             
             <span class="sr-only">Next</span>
           </a>
@@ -640,23 +325,51 @@ margin-left: 15px;
       <!-- end of carousel -->
 
 
-
   <div class="sect sectThree">
     <div class="row">
+        <div  class="col sideIcons sideIconLeft">
+            <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
+                <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
+                  <span>→</span>
+                </button>
+              </a>
+            <a href="https://www.linkedin.com/in/jose-guzman-05746375/">
+              <i  class="connect-icon  fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/snowghost24">
+              <i  class="connect-icon fa fa-github-square fa-4x" aria-hidden="true"></i>
+            </a>
+           
+        </div>
       <div class="col">
         <div class="latestWorkDiv">
-          <h1 id="contactMeDiv">&lt;Contact Me/&gt;</h1>
-          <img id="meImage" src="./images/meforsquare.jpg" alt="">
-          <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
-            <button type="submit" class="btn btn-secondary theCursive">Email Me
+            
+                <h1 id="connectWithMe">LATEST PROJECTS</h1>
+
+          <!-- <h1 id="contactMeDiv">&lt;Contact Me/&gt;</h1> -->
+          <!-- <img id="meImage" src="./images/meforsquare.jpg" alt=""> -->
+          <video  loop muted autoplay style="width:750px; height:597px;" src="./assets/images/press_key_white.mp4"></video>
+          <!-- <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
+            <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
               <span>→</span>
             </button>
-          </a>
+          </a> -->
         </div>
       </div>
-      <div class="col">
-
-      </div>
+      <div  class="col sideIcons sideIconRight">
+          <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
+              <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
+                <span>→</span>
+              </button>
+            </a>
+          <a href="">
+            <i  class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i  class="fa fa-phone-square fa-4x" aria-hidden="true"></i>
+          </a>
+         
+      </div>      
     </div>
   </div>
 
@@ -681,10 +394,10 @@ margin-left: 15px;
               <i class="devicon-nodejs-plain colored projectIconSize"></i>
               <i class="devicon-react-original-wordmark colored projectIconSize"></i>
               <i class="devicon-twitter-plain colored projectIconSize"></i>
-              <img id="watsonLogoImg" src="./images/thumbs/ibmwatson.jpeg" alt="">
-              <img id="mongoLogoImg" src="./images/thumbs/mongodb2.png" alt="">
-              <img id="mongoLogoImg" src="./images/thumbs/translate1.png" alt="">
-              <img id="socketImg" src="./images/thumbs/socketimg.png" alt="">
+              <img id="watsonLogoImg" src="./assets/images/thumbs/ibmwatson.jpeg" alt="">
+              <img id="mongoLogoImg" src="./assets/images/thumbs/mongodb2.png" alt="">
+              <img id="mongoLogoImg" src="./assets/images/thumbs/translate1.png" alt="">
+              <img id="socketImg" src="./assets/images/thumbs/socketimg.png" alt="">
             </div>
           </div>
           <div class="modal-footer">
@@ -718,104 +431,10 @@ margin-left: 15px;
     </footer>
   </div>
   </div>
-  <script src="navshrink/js/index.js"></script>
+  <script src="assets/js/index.js"></script>
   <script>
-  $(document).ready(function () {
-function moveElements (element,animation) {
-            element.addClass('animated ' + animation);        
-            //wait for animation to finish before removing classes
-            window.setTimeout( function(){
-                element.removeClass('animated ' + animation);
-            }, 2000);         
-        };
+ 
 
-
-    $("#oneSpanNext").on("click", function () {
-      var element = $('#twoImgH3')
-      var animation = "bounceInLeft";
-      moveElements(element,animation)
-    });
-
-
-
-    $("#twoSpanNext").on("click", function () {
-      var element = $('#threeImgH3')
-      var animation = "bounceInLeft";
-      moveElements(element,animation);
-    });
-
-
-    $("#threeSpanNext").on("click", function () {
-      var element = $('#fourImgH3')
-      var animation = "bounceInLeft";
-      moveElements(element,animation);
-    });
-
-
-    $("#fourSpanNext").on("click", function () {
-      var element = $('#oneImgH3')
-      var animation = "bounceInLeft";
-      moveElements(element,animation);
-    });
-
-
-    $("#oneSpanPrev").on("click", function () {
-      var element = $('#fourImgH3')
-      var animation = "bounceInRight";
-      moveElements(element,animation);
-    });
-
-
-    $("#twoSpanPrev").on("click", function () {
-      var element = $('#oneImgH3')
-      var animation = "bounceInRight";
-      moveElements(element,animation);
-    });
-
-    $("#threeSpanPrev").on("click", function () {
-      var element = $('#twoImgH3')
-      var animation = "bounceInRight";
-      moveElements(element,animation);
-    });
-
-    $("#fourSpanPrev").on("click", function () {
-      var element = $('#threeImgH3')
-      var animation = "bounceInRight";
-      moveElements(element,animation);
-    });
-
-
-    //This tries to set the Modal heigh
-    $('#myModal').on('show.bs.modal', function () {
-      $('.modal .modal-body').css('overflow-y', 'auto');
-      $('.modal .modal-body').css('min-height', $(window).height() * 0.7);
-    });
-
-    //  This script allows you to have have a shading effect on top of a parallax div.
-    var bg = $('#bg');
-    $(window).scroll(function () {
-      var x = $(this).scrollTop();
-      bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-    });
-
-    //this script allows you to scroll down when you click a button
-    $("#arrowIcon").click(function () {
-      $('html,body').animate({
-        scrollTop: $(".subsectAbout").offset().top
-      },
-        'slow');
-    })
-    $("#secondArrow").click(function () {
-      $('html,body').animate({
-        scrollTop: $("#carouselExampleIndicators").offset().top
-      },
-        'slow');
-    });
-
-    // This sets the div heigh to heigh of screen
-  
-      $('.cItem1Div').height($(window).height());
-    });
   </script>
 </body>
 
