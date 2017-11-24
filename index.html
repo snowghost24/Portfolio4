@@ -12,19 +12,17 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
-  <!-- This is used to animite elemets  -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
-  <!-- This is enables the use of font font-awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- These are devi icons link -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- insets lato google font -->
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Anton|Lato:400,700|Fugaz+One" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/animate.css">  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/style_nav.css">
   <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/style2.css"/>
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style2.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <title>My Portfolio</title>
 </head>
 
@@ -32,36 +30,46 @@
   <!-- Navigation section -->
   <nav id="topNav">
     <ul>
-      <li id="name-li" class="guzman">
-        <a href="https://www.callofduty.com/">Jose Guzman</a>
+      <li id="name-li">
+        <a href="#">Jose Guzman</a>
       </li>
-      <li class="middleNavItems">
-          <a href="https://www.callofduty.com/">TOP</a>
+
+      <li id="portfolio-nav" >
+          <a class="notDisplayed" href="#">My Portfolio</a>
         </li>
+
         <li class="middleNavItems">
-            <a href="https://www.callofduty.com/">ABOUT ME</a>
-          </li>
-          <li class="middleNavItems">
-              <a href="https://www.callofduty.com/">CONTACT ME</a>
-            </li>
+            <div class="dropdown">
+               <i data-toggle="dropdown" aria-haspopup="true" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a id="nav-about" class="dropdown-item" href="#">About Me</a>
+                  <a id="nav-portfolio" class="dropdown-item" href="#">My Portfolio</a>
+                  <a id="nav-contact" class="dropdown-item" href="#">Contact Me</a>
+                </div>
+              </div>
+        </li>
     </ul>
   </nav>
+  
+
+
 
   <!-- FIRST div in parallax -->
-  <div class="sect sectOne ">
+  <div id="firstSection" class="sect sectOne">
     <div class="firstdiv">
       <h1 id="header">Coding
         <br>for a better future
         <br>
         <a>
-        <i id="arrowIcon" class="fa fa-arrow-circle-down fa-small" aria-hidden="true"></i>
-      </a>
+          <img id="arrowIcon" src="./assets/images/modern_down_arrow3.svg" alt="">
+          <!-- <i id="arrowIcon" class="fa fa-arrow-circle-down fa-small" aria-hidden="true"></i> -->
+        </a>
       </h1>
     </div>
   </div>
 
   <!-- This is the ABOUT ME DIV -->
-  <div class="subsectAbout">
+  <div id="aboutMeDiv" class="subsectAbout">
     <div class="container1">
       <header>
         <h1>ABOUT
@@ -122,7 +130,7 @@
               <span>Coding</span>
             </a>
             <div class="lb-overlay" id="image-1">
-              <img src="./assets/images/full/lirigif.gif" alt="image01" />
+              <!-- <img src="./assets/images/full/lirigif.gif" alt="image01" /> -->
               <div>
                 <h3>Liri Bot
                   <span>/point/</h3>
@@ -203,15 +211,15 @@
     <div class="latestWorkDiv">
       <h1 id="portfolioDiv">LATEST PROJECTS</h1>
       <a>
-      <img id="secondArrow" src="./assets/images/down_arrow2.png" alt="">
-    </a>
+        <img id="secondArrow" src="./assets/images/down_arrow2.png" alt="">
+      </a>
     </div>
   </div>
 
   <!-- start of carousel -->
   <div id="carouselDiv">
     <div id="carouselExampleIndicators" data-interval=false class="carousel slide" data-ride="carousel">
-      
+
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -219,48 +227,49 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
 
-
       <div class="carousel-inner" role="listbox">
+
         <div class="carousel-item active cItem1Div">
           <div class="hiddeOverflow" data-toggle="modal" data-target="#myModal">
             <img class="citem1image1" src="./assets/images/full/voiceassistanceFull.jpg">
             <div class="hiddeOverflow">
-                <h3 id="oneImgH3" class="centerImageContent h3Title">Voice Command</h3>
-            </div> 
+              <h3 id="oneImgH3" class="centerImageContent h3Title">Voice Command</h3>
+            </div>
           </div>
           <div class="carousel-caption d-none d-md-block">
-              <!-- <button type="button" style="background-color:black; color:white;" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button> -->
+            <!-- <button type="button" style="background-color:black; color:white;" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button> -->
             <h3>Item 1</h3>
             <p>describes item 1</p>
           </div>
           <a id="oneSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span   class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
+            <span class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
             <img class="scrollImg" src="./assets/images/thumbs/tone_analyzerthumb.jpg" alt="image03">
             <span class="sr-only">Previous</span>
           </a>
           <a id="oneSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span  class="cursorControlsC" aria-hidden="true">Southern Leather</span>
+            <span class="cursorControlsC" aria-hidden="true">Southern Leather</span>
             <img class="scrollImg" src="./assets/images/thumbs/carinteriorthumb.jpg" alt="image03">
             <span class="sr-only">Next</span>
           </a>
-
         </div>
 
 
         <div class="carousel-item cItem1Div">
+          <div class="hiddeOverflow">
+            <img class="citem1image1" src="./assets/images/full/carinterirorfull.jpg">
             <div class="hiddeOverflow">
-                <img class="citem1image1" src="./assets/images/full/carinterirorfull.jpg">
-                <div class="hiddeOverflow">
-                    <h3 id="twoImgH3" class="centerImageContent h3Title">Southern Leather</h3>
-                  </div> 
-              </div>
+              <h3 id="twoImgH3" class="centerImageContent h3Title">Southern Leather</h3>
+            </div>
+          </div>
           <a id="twoSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span   class="cursorControlsC" aria-hidden="true">Voice Command</span>
-              <img class="scrollImg" src="./assets/images/thumbs/voiceActivationSmall.jpg" alt="image03">            <span class="sr-only">Previous</span>
+            <span class="cursorControlsC" aria-hidden="true">Voice Command</span>
+            <img class="scrollImg" src="./assets/images/thumbs/voiceActivationSmall.jpg" alt="image03">
+            <span class="sr-only">Previous</span>
           </a>
-          <a  id="twoSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span  class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
-              <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">            <span class="sr-only">Next</span>
+          <a id="twoSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
+            <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">
+            <span class="sr-only">Next</span>
           </a>
           <div class="carousel-caption d-none d-md-block">
             <h3>Item 2</h3>
@@ -269,21 +278,21 @@
         </div>
 
 
-
-
         <div class="carousel-item cItem1Div">
+          <div class="hiddeOverflow">
+            <img class="citem1image1" src="./assets/images/full/transworldfull.jpg">
             <div class="hiddeOverflow">
-                <img class="citem1image1" src="./assets/images/full/transworldfull.jpg">
-                <div class="hiddeOverflow">
-                    <h3 id="threeImgH3" class="centerImageContent h3Title">Transworld Scraper</h3>
-                  </div> 
-              </div>
-          <a id="threeSpanPrev"  class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span  class="cursorControlsC" aria-hidden="true">Southern Leather</span>
-              <img class="scrollImg" src="./assets/images/thumbs/carinteriorthumb.jpg" alt="image03">            <span class="sr-only">Previous</span>
+              <h3 id="threeImgH3" class="centerImageContent h3Title">Transworld Scraper</h3>
+            </div>
+          </div>
+          <a id="threeSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="cursorControlsC" aria-hidden="true">Southern Leather</span>
+            <img class="scrollImg" src="./assets/images/thumbs/carinteriorthumb.jpg" alt="image03">
+            <span class="sr-only">Previous</span>
           </a>
-          <a  id="threeSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span  class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
+          <a id="threeSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button"
+            data-slide="next">
+            <span class="cursorControlsC" aria-hidden="true">Tone Analyzer</span>
             <img class="scrollImg" src="./assets/images/thumbs/tone_analyzerthumb.jpg" alt="image03">
             <span class="sr-only">Next</span>
           </a>
@@ -293,25 +302,21 @@
           </div>
         </div>
 
-
-
-
         <div class="carousel-item cItem1Div">
+          <div class="hiddeOverflow">
+            <img class="citem1image1" src="./assets/images/full/tone_analyzerfull.jpg">
             <div class="hiddeOverflow">
-                <img class="citem1image1" src="./assets/images/full/tone_analyzerfull.jpg">
-                <div class="hiddeOverflow">
-                    <h3 id="fourImgH3" class="centerImageContent h3Title">Tone Analyzer</h3>
-                  </div> 
-              </div>
+              <h3 id="fourImgH3" class="centerImageContent h3Title">Tone Analyzer</h3>
+            </div>
+          </div>
           <a id="fourSpanPrev" class="carousel-control-prev sideAdjustmentsLeft" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span  class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
-            <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">   
+            <span class="cursorControlsC" aria-hidden="true">Transworld Scraper</span>
+            <img class="scrollImg" src="./assets/images/thumbs/transwrorldthumb.jpg" alt="image03">
             <span class="sr-only">Previous</span>
           </a>
           <a id="fourSpanNext" class="carousel-control-next sideAdjustmentsRight" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span  class="cursorControlsC" aria-hidden="true">Voice Command</span>
+            <span class="cursorControlsC" aria-hidden="true">Voice Command</span>
             <img class="scrollImg" src="./assets/images/thumbs/voiceActivationSmall.jpg" alt="image03">
-            
             <span class="sr-only">Next</span>
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -319,57 +324,22 @@
             <p>describes item 4</p>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-      <!-- end of carousel -->
+  <!-- end of carousel -->
 
 
-  <div class="sect sectThree">
-    <div class="row">
-        <div  class="col sideIcons sideIconLeft">
-            <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
-                <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
-                  <span>→</span>
-                </button>
-              </a>
-            <a href="https://www.linkedin.com/in/jose-guzman-05746375/">
-              <i  class="connect-icon  fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/snowghost24">
-              <i  class="connect-icon fa fa-github-square fa-4x" aria-hidden="true"></i>
-            </a>
-           
-        </div>
-      <div class="col">
-        <div class="latestWorkDiv">
-            
-                <h1 id="connectWithMe">LATEST PROJECTS</h1>
-
+  <div id="contactMeDiv" class="sect sectThree">
+    <div>
+          <h1 id="connectWithMe">THANK YOU FOR VIEWING THIS PORTFOLIO</h1>
           <!-- <h1 id="contactMeDiv">&lt;Contact Me/&gt;</h1> -->
-          <!-- <img id="meImage" src="./images/meforsquare.jpg" alt=""> -->
-          <video  loop muted autoplay style="width:750px; height:597px;" src="./assets/images/press_key_white.mp4"></video>
-          <!-- <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
+          <a id="emailButton" href="mailto:jguzman24680@gmail.com">
             <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
               <span>→</span>
             </button>
-          </a> -->
-        </div>
-      </div>
-      <div  class="col sideIcons sideIconRight">
-          <a style="display:block; margin-top:20px;" href="mailto:jguzman24680@gmail.com">
-              <button type="submit" class="btn btn-secondary btn-outline-secondary theCursive">Email Me
-                <span>→</span>
-              </button>
-            </a>
-          <a href="">
-            <i  class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
           </a>
-          <a href="">
-            <i  class="fa fa-phone-square fa-4x" aria-hidden="true"></i>
-          </a>
-         
-      </div>      
     </div>
   </div>
 
@@ -432,10 +402,6 @@
   </div>
   </div>
   <script src="assets/js/index.js"></script>
-  <script>
- 
-
-  </script>
 </body>
 
 </html>

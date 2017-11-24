@@ -1,32 +1,86 @@
 // ────ALLOWS ME TO ADD AND REMOVE CLASSES WHENS SCROLL──────────────────────
 
 $(document).ready(function () {
-$(function(){
-  $(window).scroll(function() {
-     if($(window).scrollTop() >= 100) {
-       $('nav').addClass('scrolled');
-     }
-    else {
-      $('nav').removeClass('scrolled');
-      $('nav').addClass('scrolled2');
+
+  // this allows me to use animate.css
+  $.fn.extend({
+    animateCss: function (animationName, callback) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+            if (callback) {
+              callback();
+            }
+        });
+        return this;
     }
-  });
+});
+
+// this creates transitions for first section
+$('#firstSection').animateCss('fadeInDown', function () {
+  $('#header').css("display","block").animateCss('fadeIn');
+});
+
+
+  // $(function(){
+  //   $(window).scroll(function() {
+  //      if($(window).scrollTop() >= 3000) {
+  //       console.log("You passed it");
+  //       $('#connectWithMe').animateCss('fadeIn');
+  //       //  $('#connectWithMe').addClass('animate');
+  //       //  $('#connectWithMe').addClass('bounceInLeft');
+         
+  //      }
+  //     else {
+  //       $('#animateContact').removeClass('animate');
+  //       $('#animateContact').removeClass('bounceInLeft');
+  //     }
+  //   });
+  // });
+
+
+// $(function(){
+//   $(window).scroll(function() {
+//      if($(window).scrollTop() >= 700) {
+//       //  $('nav').addClass('scrolled');
+//        console.log($(window).scrollTop())
+//        console.log("im in here");
+//         $('nav').addClass('scrolled2');
+//      }
+//     else {
+//       $('nav').removeClass('scrolled');
+     
+//     }
+//   });
+// });
+
+
+var element_position1 = $('#aboutMeDiv').offset().top;
+$(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = element_position1;
+    if(y_scroll_pos > scroll_pos_test - 30) {
+      // console.log(y_scroll_pos);
+      // $('nav').addClass('scrolled2');
+      $('#name-li').addClass('guzman animate bounceInLeft');
+    } else {
+        // $('nav').removeClass('displayMore');
+        // $('#name-li').removeClass('guzman');
+      }
 });
 
 
 var element_position = $('.sectThree').offset().top;
-
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = element_position;
-    console.log(y_scroll_pos);
-
     if(y_scroll_pos > scroll_pos_test - 30) {
-      $('nav').addClass('displayMore');
-      $('#name-li').addClass('guzman animate bounceInLeft');
+      console.log(y_scroll_pos);
+      $('#portfolio-nav').addClass('hidNavContent').animateCss("bounceIn")
+      // $('#name-li').addClass('guzman animate bounceInLeft');
     } else {
-        $('nav').removeClass('displayMore');
-        $('#name-li').removeClass('guzman');
+        // $('nav').removeClass('displayMore');
+        // $('#name-li').removeClass('guzman');
       }
 });
 
@@ -46,7 +100,6 @@ var element = $('#twoImgH3')
 var animation = "bounceInLeft";
 moveElements(element,animation)
 });
-
 
 
 $("#twoSpanNext").on("click", function () {
@@ -110,11 +163,44 @@ bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
 // SCROLLS DOWN ON BUTTON LICK────────────────────────────────────────────────────
 
 $("#arrowIcon").click(function () {
-$('html,body').animate({
-scrollTop: $(".subsectAbout").offset().top
-},
-'slow');
+  scrollToAbout()
 })
+
+$("#nav-about").click(function () {
+  scrollToAbout()
+})
+
+$("#nav-contact").click(function () {
+  scrollToContact()
+})
+
+$("#nav-portfolio").click(function () {
+  scrollToPortfolio()
+})
+
+function scrollToPortfolio() {
+  $('html,body').animate({
+    scrollTop: $("#carouselDiv").offset().top
+    },
+    'slow');
+  }
+
+
+function scrollToAbout() {
+$('html,body').animate({
+  scrollTop: $(".subsectAbout").offset().top
+  },
+  'slow');
+}
+
+function scrollToContact() {
+  $('html,body').animate({
+    scrollTop: $(".sectThree").offset().top
+    },
+    'slow');
+  }
+
+
 $("#secondArrow").click(function () {
 $('html,body').animate({
 scrollTop: $("#carouselExampleIndicators").offset().top
