@@ -17,11 +17,6 @@
 	background-attachment: fixed;
  }
 
- .subsectAbout {
-	height: 780px;
-	background: url("../images/bg.jpg") repeat top left;
- }
-
  .sectOne {
 	height: 1000px;
 	width: 100%;
@@ -30,6 +25,11 @@
    background-image: linear-gradient(rgba(56,56,56,.8), #1a1a1a),
    url("../images/coding.gif");
 	background-repeat: no-repeat;
+ }
+
+ .subsectAbout {
+	height: 780px;
+	background: url("../images/bg.jpg") repeat top left;
  }
 
  .sectTwo {
@@ -65,7 +65,6 @@ url("../images/wbw.jpg");
  }
 
  /* This reduces the size of the down icon button in the carousel models*/
-
  #arrowIcon {
    width: 90px;
    margin-top: 130px;
@@ -94,11 +93,6 @@ url("../images/wbw.jpg");
 	width: auto;
  }
 
- .descriptionP {
-	color: black;
-	width: auto;
- }
-
  .latestWorkDiv {
 	overflow: auto;
 	width: 900px;
@@ -118,6 +112,11 @@ url("../images/wbw.jpg");
 	font-size: 100px;
  }
 
+
+ #contactMeDiv {
+	position: relative;
+  
+}
  #connectWithMe {
 	color: black;
 	/* margin-top: 50px; */
@@ -133,11 +132,6 @@ url("../images/wbw.jpg");
  }
 
 
- #contactMeDiv {
-    position: relative;
-   
- }
-
  #emailButton{
    position: absolute;
    /* z-index: -1;  */
@@ -145,6 +139,81 @@ url("../images/wbw.jpg");
   top: 65%;
   transform: translate(-50%, -50%); 
  }
+ #aboutMeDiv a {
+   display: block;
+   cursor:url('../images/thumbs/next3.png'), auto;
+	}
+	
+	#name-li a {
+		/* display: block; */
+		cursor:url('../images/thumbs/next3.png'), auto;
+		}
+
+		#secondArrow {
+			/* display: block; */
+			cursor:url('../images/thumbs/next3.png'), auto;
+			}
+
+	/* .middleNavItems {
+			cursor:url('../images/thumbs/next3.png'), auto;
+	} */
+
+	.citem1image1 , .centerImageContent ,.middleNavItems ,.carousel-control-next, .carousel-control-prev {
+		cursor:url('../images/thumbs/next3.png'), auto;		
+	}
+	
+	#arrowIcon {
+		cursor:url('../images/thumbs/next3.png'), auto;
+	}
+
+	body a:hover{
+	/* cursor: url(assets/images/next3.png), auto; */
+	}
+
+	
+	.sideAdjustmentsLeft{
+	flex-direction: column;
+	margin-left: 15px;
+	}
+	
+	.sideAdjustmentsRight{
+	flex-direction: column;
+	margin-right: 15px;
+	}
+	
+	.carousel-indicators .active {
+	background-color: #2f4862; 
+	height: 20px;
+	}
+	
+	
+	.carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+	/* text-indent: -999px; */
+	cursor: pointer;
+	background-color: #000 \9;
+	background-color: rgba(0, 0, 0, .2);
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 10px; 
+	}
+	
+	
+	/* edits the email me button */
+	.theCursive {
+		font-size: 16px;
+		font-family: "brandon-grotesque", Constantia, Palatino, "Palatino Linotype";
+		font-style: italic;
+		color: white;
+		background-color: #2a4763;
+	 }
+	
+
+
+
+
+
  /*============================ This area targes the footers =============================*/
 
  footer {
@@ -222,17 +291,20 @@ url("../images/wbw.jpg");
 
  /* this first div in the carousel */
 
- .cItem1Div {
-	/* height: 100%; */
-	/* background-color: #1a1a1a; */
+ /* .cItem1Div {
+	height: 100%;
+	background-color: #1a1a1a;
 	background: url("../images/bg.jpg") repeat top left;
 	position: relative;
- }
+ } */
 
  /* This is so that the white background doesnt show when switching images */
  #carouselDiv {
 	/* background-color: #1a1a1a; */
-	background: url("../images/bg.jpg") repeat top left;
+	
+	background-color: #D1F1EE;
+	/* background-color: #d7cecf; */
+	/* background: url("../images/bg.jpg") repeat top left; */
  }
 
  /* this image in the first carousel */
@@ -309,51 +381,6 @@ box-shadow: 1px 1px 2px #708090, 1px 1px 2px rgba(158,111,86,0.3) inset;
 border-radius: 4px 4px 4px 4px;
 }
 
-.scrollImg:hover{
-/* cursor: url(assets/images/next3.png), auto; */
-}
-
-body a:hover{
-/* cursor: url(assets/images/next3.png), auto; */
-}
-
-.sideAdjustmentsLeft{
-flex-direction: column;
-margin-left: 15px;
-}
-
-.sideAdjustmentsRight{
-flex-direction: column;
-margin-right: 15px;
-}
-
-.carousel-indicators .active {
-background-color: #2f4862; 
-height: 20px;
-}
-
-
-.carousel-indicators li {
-width: 20px;
-height: 20px;
-margin: 2px;
-/* text-indent: -999px; */
-cursor: pointer;
-background-color: #000 \9;
-background-color: rgba(0, 0, 0, .2);
-border: 1px solid rgba(0, 0, 0, .2);
-border-radius: 10px; 
-}
-
-
-/* edits the email me button */
-.theCursive {
-	font-size: 16px;
-	font-family: "brandon-grotesque", Constantia, Palatino, "Palatino Linotype";
-	font-style: italic;
-   color: white;
-   background-color: #2a4763;
- }
 
 
 

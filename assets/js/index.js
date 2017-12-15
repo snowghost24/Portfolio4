@@ -1,6 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
 $(document).ready(function () {
-
   // this allows me to use animate.Css()
   $.fn.extend({
     animateCss: function (animationName, callback) {
@@ -61,8 +60,8 @@ $(document).ready(function () {
     if (y_scroll_pos > (scroll_pos_test - 30) && visibleSlideInLeft === false) {
       // console.log(y_scroll_pos);
       // $('nav').addClass('scrolled2');
-      $('#name-li').addClass('guzman').animateCss('slideInLeft')
-      visibleSlideInLeft = true;
+      // $('#name-li').addClass('guzman').animateCss('slideInLeft')
+      // visibleSlideInLeft = true;
     } else {
       // $('nav').removeClass('displayMore');
       // $('#name-li').removeClass('guzman');
@@ -79,8 +78,11 @@ $(document).ready(function () {
     var y_scroll_pos = window.pageYOffset;
     if ( y_scroll_pos < (element_position) || y_scroll_pos > bottom  ) {
       $('#portfolio-nav').removeClass('hidNavContent');
+     
     } else {
       $('#portfolio-nav').addClass('hidNavContent')
+      $('#name-li').addClass('guzman').animateCss('slideInLeft')
+      visibleSlideInLeft = true;
        } 
   });
 

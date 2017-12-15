@@ -23,7 +23,7 @@
 .body-text h1 {
   font-family: sans-serif;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-top: 2rem;
 }
 .body-text p {
@@ -62,7 +62,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.2rem;
   font-family: "BonvenoCFLight","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -98,15 +98,20 @@ nav ul li a {
 
 
 
-.guzman {
-  border: 2px solid #383838;
+.guzman > a{
+  /* border: 2px solid #383838; */
   padding: 14px;
+  font-family: 'Bad Script';
+  font-size: 26px;
+  color: #76323F;
+  
   /* background-color: #4e3022; */
 } 
 
 #portFolio-nav{
   display: flex;
 }
+
 
 .hidNavContent > a{
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
