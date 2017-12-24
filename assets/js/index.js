@@ -215,8 +215,10 @@ $(document).ready(function () {
   $('.cItem1Div').height($(window).height());
 });
 
-
-
+// resume trigger
+  $('#trigger').click(function(){
+    $("#dialog").dialog('open');
+  });  
 
 
 

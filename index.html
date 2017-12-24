@@ -44,6 +44,8 @@
             <a id="nav-about" class="dropdown-item" href="#">About Me</a>
             <a id="nav-portfolio" class="dropdown-item" href="#">My Portfolio</a>
             <a id="nav-contact" class="dropdown-item" href="#">Contact Me</a>
+            <a id="trigger" class="dropdown-item" target="_blank" href="./resume.html">My Resume</a>
+
           </div>
         </div>
       </li>
@@ -87,7 +89,7 @@
               <div>
                 <h3>UCF Coding Bootcamp
                  </h3>
-                <p>This past year I graduate from UCF Bootcamp as a fullstack web developer. Here I had the opportunity to meet great people and harpen the tools that will allow me to succeed as a developer.  </p>
+                <p>This past year I graduate from UCF coding Bootcamp as a fullstack web developer. Here I had the opportunity to meet great people and harpen the tools that will allow me to succeed as a developer.  </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
             </div>
@@ -102,7 +104,7 @@
               <div>
                 <h3>Teaching</h3>
                 
-                <p> In my previous employment I worked as a high school teacher. Having a mathematics background is a great benefit as a developer because it allows me to better understand math intensive algorithms. </p>
+                <p> In my previous employment I worked as a high school teacher. I consider having a mathematics background a great benefit as a developer because it allows me to better understand math intensive algorithms. </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
             </div>
@@ -133,7 +135,7 @@
               <div>
                 <h3>Coding
                   </h3>
-                <p> Hi my name is Jose Guzman and I love to code. I have a deep interest in artificial intelligence, and I think it’s going to drive a new wave of web applications. I'm comfortable with several programming languages but looking forward to more. Next on my radar is Python but I’d also like to learn OpenCog - a software being used to develop AGI. 
+                <p> Hi my name is Jose Guzman and I love to code. I have a deep interest in artificial intelligence not just because it's exciting but also because I think it’s going to drive a new wave of web applications. I'm comfortable with several programming languages including Javascrip, PHP, and Node JS but I look forward to learning more. Next on my radar is Python but I’d also like to learn OpenCog - a software being used to develop AGI. 
                   </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
@@ -148,7 +150,7 @@
               <img src="./assets/images/full/westworld.png" alt="image05" />
               <div>
                 <h3>Future Tech</h3>
-                <p>I have a deep interest in techology and I like to stay current on everythign tech. I think I'm very creative and i'm always looking to find new ways to apply existing technologies.  </p>
+                <p>I have a deep interest in techology and I like to stay current on everythign tech. I think I'm very creative and I'm always looking to find new ways to apply existing technologies.  </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
             </div>
@@ -163,7 +165,7 @@
               <div>
                 <h3>Travel
                 </h3>
-                <p>I also love to travel. I have visited many countries but there is much more to see. Next on my list is a trip to Asia i hope to eventually have this opportunity.  </p>
+                <p>I also love to travel. I have visited many countries but there is much more to see. Next on my list is a trip to Asia I hope to eventually have this opportunity.  </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
             </div>
@@ -178,7 +180,7 @@
               <div>
                 <h3>Golden State Warriors
                   </h3>
-                <p>I love basketball and I'm super Steph Curry fan. I played all throughout high school and college. Despite not playing as much as I onced did I believe in having a great balance between writing and having an active lifestyle. </p>
+                <p>I love basketball and I'm super Steph Curry fan. I played all throughout high school and college. Despite not playing as much as I onced did but I'm a big believer in having an active lifestyle.</p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
             </div>
@@ -192,7 +194,7 @@
               <img src="./assets/images/full/snowboarding.jpg" alt="image08" />
               <div>
                 <h3>snowboarding</h3>
-                <p>Along with writing code snowboarding is one of my favorite things to do. I love to spend time one the mountain shreading pow. 
+                <p>Along with writing code snowboarding is one of my favorite things to do. I love to spend time on the mountain with frinds and family.
                 </p>
               </div>
               <a href="#page" class="lb-close">x Close</a>
@@ -366,7 +368,7 @@
             </div>
             <div>
               <hr>
-              <h3>This is the beginning of a voice activated assistance application that server many purposes. Currently it can be used to <br>
+              <h3>This is the beginning of a voice activated assistance application that could server many purposes. Currently it can be used to <br>
                 - <b>send emails</b><br>
                 - <b>post tweets</b><br>
                 - <b>search for houseing information on zillow</b><br>
@@ -448,7 +450,7 @@
                 </div>
                 <div>
                     <hr>
-                    <h3>This is a business website for a upholstery company called Souther Leather and Trim based out of Orlando Florida. The website allows customers to view design options and submit quotes for pricing. This webpage also looks great on mobile devices. 
+                    <h3> 
                        <br>
                        </h3>
                   </div>
@@ -486,7 +488,7 @@
                 </div>
                 <div>
                     <hr>
-                    <h3>This application was part of a group project where we took a look at node.js app for the first time. We were able to create an application that takes in input, analyzes the input then creates a graph of key tone indicators. The app uses IBM Watson to analyze the tone and Google firebase allows you to log in and keep track of all previous inputs.
+                    <h3>This application was part of a group project where we created a Node JS application for the first time. We were able to create an application that takes in input, analyzes it then creates a graph of IBM Watson tone indicators. The app analyzes the tone and Google firebase allows you to log in and keep track of all previous inputs.
                        <br>
                        </h3>
                   </div>
@@ -503,6 +505,13 @@
         </div>
       </div>
 
+
+      <!-- Resume modal -->
+      <div id="dialog" style="display:none">
+          <div>
+          <iframe src="./assets/images/resume.pdf"></iframe>
+          </div>
+      </div> 
 
   <!-- Here ends divider -->
   <div>
@@ -528,6 +537,9 @@
   </div>
   </div>
   <script src="assets/js/index.js"></script>
+  <script src="./assets/js/jquery-ui-1.12.1.custom"></script>
+
+
 </body>
 
 </html>
