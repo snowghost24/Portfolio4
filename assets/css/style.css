@@ -136,7 +136,7 @@ url("../images/wbw.jpg");
    position: absolute;
    /* z-index: -1;  */
   left: 50%;
-  top: 65%;
+  top: 79%;
   transform: translate(-50%, -50%); 
  }
  #aboutMeDiv a {
@@ -388,6 +388,19 @@ border-radius: 4px 4px 4px 4px;
 }
 
 
+.centerPdf {
+	position: absolute;
+   /* z-index: -1;  */
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%); 
+}
+
+
+.smallText{
+	font-size: 25px;
+	margin-left: 120px;
+}
 
 
 
