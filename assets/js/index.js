@@ -119,6 +119,12 @@ $(document).ready(function () {
 
 
   $("#fourSpanNext").on("click", function () {
+    var element = $('#fiveImgH3')
+    var animation = "bounceInLeft";
+    moveElements(element, animation);
+  });
+
+  $("#fiveSpanNext").on("click", function () {
     var element = $('#oneImgH3')
     var animation = "bounceInLeft";
     moveElements(element, animation);
@@ -126,7 +132,7 @@ $(document).ready(function () {
 
 
   $("#oneSpanPrev").on("click", function () {
-    var element = $('#fourImgH3')
+    var element = $('#fiveImgH3')
     var animation = "bounceInRight";
     moveElements(element, animation);
   });
@@ -149,6 +155,13 @@ $(document).ready(function () {
     var animation = "bounceInRight";
     moveElements(element, animation);
   });
+
+  $("#fiveSpanPrev").on("click", function () {
+    var element = $('#fourImgH3')
+    var animation = "bounceInRight";
+    moveElements(element, animation);
+  });
+
 
   // ───SETS HEIGHT OF MODAL TO SCREEN SIZE────────────────────────
   $('#myModal').on('show.bs.modal', function () {
